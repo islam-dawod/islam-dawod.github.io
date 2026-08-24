@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://islam-dawod.github.io/ID/sitemap.xml

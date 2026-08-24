@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="'Segoe UI',Tahoma,sans-serif" direction="rtl">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b8cff"/>
+      <stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0b1020"/>
+  <!-- browser window -->
+  <rect x="70" y="70" width="1060" height="660" rx="22" fill="#0f1730" stroke="#24305a" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="70" rx="22" fill="#141d3a"/>
+  <rect x="70" y="118" width="1060" height="22" fill="#141d3a"/>
+  <circle cx="112" cy="105" r="9" fill="#ff5f57"/>
+  <circle cx="146" cy="105" r="9" fill="#febc2e"/>
+  <circle cx="180" cy="105" r="9" fill="#28c840"/>
+  <rect x="360" y="90" width="640" height="30" rx="15" fill="#0b1020" stroke="#24305a"/>
+  <text x="985" y="111" fill="#5b8cff" font-size="18">🔒</text>
+  <!-- content -->
+  <rect x="90" y="160" width="1020" height="550" rx="14" fill="url(#bg)"/>
+  <rect x="90" y="160" width="1020" height="275" rx="14" fill="url(#glass)"/>
+  <rect x="150" y="215" width="150" height="34" rx="17" fill="#ffffff" fill-opacity=".22"/>
+  <text x="225" y="239" fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle">موقع شركة</text>
+  <text x="150" y="330" fill="#ffffff" font-size="64" font-weight="800">Aurora Corp</text>
+  <text x="150" y="390" fill="#ffffff" fill-opacity=".85" font-size="28">موقع تعريفي احترافي لشركة تقنية</text>
+  <rect x="150" y="430" width="210" height="60" rx="30" fill="#ffffff"/>
+  <text x="255" y="469" fill="#5b8cff" font-size="24" font-weight="700" text-anchor="middle">ابدأ الآن</text>
+  <!-- cards row -->
+  <rect x="150" y="540" width="280" height="130" rx="14" fill="#0b1020" fill-opacity=".35" stroke="#ffffff" stroke-opacity=".2"/>
+  <rect x="460" y="540" width="280" height="130" rx="14" fill="#0b1020" fill-opacity=".35" stroke="#ffffff" stroke-opacity=".2"/>
+  <rect x="770" y="540" width="280" height="130" rx="14" fill="#0b1020" fill-opacity=".35" stroke="#ffffff" stroke-opacity=".2"/>
+</svg>
