@@ -854,6 +854,26 @@ body.modal-open { overflow: hidden; }
 /* Nav "Start project" CTA icon */
 .nav-cta svg { width: 16px; height: 16px; flex: none; }
 
+/* Nav CV download button */
+.nav-cv {
+  color: var(--primary);
+  font-weight: 700;
+  border: 1.5px solid var(--border);
+  background: rgba(0, 102, 204, .04);
+  gap: 7px;
+  transition: background .2s, color .2s, border-color .2s, box-shadow .2s;
+}
+.nav-cv svg { width: 15px; height: 15px; flex: none; stroke-width: 2.2; }
+.nav-cv:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: rgba(0, 102, 204, .08);
+  box-shadow: 0 4px 12px -4px rgba(0, 102, 204, .25);
+}
+@media (max-width: 720px) {
+  .nav-cv { margin-top: 12px; text-align: center; justify-content: center; }
+}
+
 /* Mobile: center card content in services & portfolio, tune hero buttons */
 @media (max-width: 600px) {
   .card { text-align: center; }
