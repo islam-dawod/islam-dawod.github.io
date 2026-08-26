@@ -140,17 +140,27 @@
   </div>
 
   <div class="pdf-wrap">
-    <object class="pdf-frame" data="IslamDaoud_CV.pdf" type="application/pdf">
-      <div class="pdf-fallback" style="display:block">
-        <h2>السيرة الذاتية</h2>
-        <p>لا يمكن عرض الملف مباشرة. يمكنك تحميله من الزر أعلاه.</p>
-        <a class="tb-btn tb-primary" href="IslamDaoud_CV.pdf" download="Islam_Daoud_CV.pdf">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          تحميل السيرة الذاتية
-        </a>
+    <iframe class="pdf-frame" id="pdfFrame"
+      src="https://docs.google.com/viewer?url=https://islam-dawod.github.io/IslamDaoud_CV.pdf&embedded=true"
+      frameborder="0" allowfullscreen>
+    </iframe>
+    <noscript>
+      <div style="text-align:center;padding:60px 24px;">
+        <h2 style="color:var(--text);">السيرة الذاتية</h2>
+        <p style="color:var(--muted);">يرجى تحميل الملف من الزر أعلاه.</p>
       </div>
-    </object>
+    </noscript>
   </div>
+
+  <script>
+    /* Fallback: if Google Viewer fails, redirect to raw PDF */
+    var frame = document.getElementById('pdfFrame');
+    if (frame) {
+      frame.onerror = function() {
+        window.location.href = 'IslamDaoud_CV.pdf';
+      };
+    }
+  </script>
 
 </body>
 </html>
